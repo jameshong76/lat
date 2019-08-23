@@ -21,7 +21,7 @@ RUN tar xvfz apache-tomcat-8.5.45.tar.gz \
     && mv tomcat /usr/local
 
 #COPY tomcat /usr/local
-WORKDIR /usr/local
+#WORKDIR /usr/local
 
 EXPOSE 80
 EXPOSE 8080

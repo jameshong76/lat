@@ -5,6 +5,4 @@ dir_tomcat=/usr/local/tomcat/bin
 
 httpd-foreground &
 
-$dir_tomcat/catalina.sh start
-
-/bin/bash
+$dir_tomcat/catalina.sh run

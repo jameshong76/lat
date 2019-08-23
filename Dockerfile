@@ -13,6 +13,9 @@ RUN apk add openjdk8 \
 EXPOSE 8080
 
 COPY httpd-foreground /usr/local/bin/
-COPY cmd.sh /usr/local/bin/
 
-CMD ["cmd.sh"]
+#WORKDIR /usr/local/bin
+
+RUN httpd-foreground &
+
+CMD ["catalina.sh", "run"]
